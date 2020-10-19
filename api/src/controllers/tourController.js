@@ -11,13 +11,19 @@ exports.getAllTours = (req, res, next) => {
   })
 }
 
+exports.createTour = (req, res, next) => {
+
+  res.status(201).json({
+    status: 'success',
+    data: 'I love puppies'
+  })
+}
+
 exports.getTour = (req, res, next) => {
 
   const id = req.params.id * 1
   
   const tour = data.tours.find(tour => tour.id === id)
-
-  console.log(tour)
 
   res.status(200).json({
     status: 'success',
