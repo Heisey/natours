@@ -10,3 +10,16 @@ export const SecondaryHeader = styled.div`
   align-items: center;
   color: white;
 `
+
+export const ButtonContainer = styled.div`
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* // !! Temp styles delete when replace with buttons */
+
+  span {
+    padding: 20px;
+  }
+`

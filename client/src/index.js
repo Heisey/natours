@@ -24,15 +24,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app';
+
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './core'
+import { reducers } from './redux'
 // import {unregister} from './core'
+
+const store = createStore(reducers, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={defaultTheme}>
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={defaultTheme}>
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

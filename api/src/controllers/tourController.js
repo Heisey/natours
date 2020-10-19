@@ -4,10 +4,12 @@ const data = require('../../development/seedData/simpleTours.js')
 
 exports.getAllTours = (req, res, next) => {
 
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+
   res.status(200).json({
     status: 'success',
-    results: data.tours.length,
-    data: data.tours
+    resultAmout: data.tours.length,
+    results: data.tours
   })
 }
 

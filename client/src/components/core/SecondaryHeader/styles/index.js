@@ -1,4 +1,5 @@
 import {
+  ButtonContainer,
   SecondaryHeader
 } from './base'
 
@@ -7,6 +8,7 @@ import {
 } from './content'
 
 export default {
+  ButtonContainer,
   Logo,
   SecondaryHeader
 }
