@@ -1,18 +1,22 @@
 import { 
   PrimaryHeader, 
-  Overlay,
   LogoBox,
   TextBox
-} from './Base'
+} from './base'
 
 import {
-  HeaderLogo
-} from './Content'
+  HeaderLogo,
+  Heading,
+  HeadingMain,
+  HeadingSub
+} from './content'
 
 export default {
   PrimaryHeader,
   LogoBox,
   TextBox,
   HeaderLogo,
-  Overlay
+  Heading,
+  HeadingMain,
+  HeadingSub
 }
