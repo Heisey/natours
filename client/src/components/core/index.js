@@ -1,5 +1,7 @@
 import PrimaryHeader from './PrimaryHeader'
+import SecondaryHeader from './SecondaryHeader'
 
 export default {
-  PrimaryHeader
+  PrimaryHeader,
+  SecondaryHeader
 }
