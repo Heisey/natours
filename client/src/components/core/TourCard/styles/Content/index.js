@@ -41,3 +41,21 @@ export const TourDetail = styled.div`
   box-align: center;
   align-items: center;
 `
+
+export const TourPrice = styled.p`
+  color: #999;
+
+  span {
+    font-weight: 700;
+  }
+`
+
+export const TourRating = styled.p`
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: #999;
+
+  span {
+    font-weight: 700;
+  }
+`

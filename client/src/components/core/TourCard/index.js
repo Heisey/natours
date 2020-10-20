@@ -25,6 +25,7 @@ const TourCard = (props) => {
             />
           </styles.ImageContainer>
         </styles.Header>
+
         <styles.Body>
           <styles.SubHeading>
             {tourData.difficulty} {tourData.duration}-DAY TOUR
@@ -59,6 +60,15 @@ const TourCard = (props) => {
             <i class="fas fa-user-alt"></i> 7 People
           </styles.DetailContainer>
         </styles.Body>
+      
+        <styles.Footer>
+          <styles.TourPrice>
+            <span>${tourData.price}</span> per person
+          </styles.TourPrice>
+          <styles.TourRating>
+            <span>{tourData.ratingsAverage}</span> rating {`(${tourData.ratingsQuantity})`}
+          </styles.TourRating>
+        </styles.Footer>
       </styles.TourCard>
     </div>
   )

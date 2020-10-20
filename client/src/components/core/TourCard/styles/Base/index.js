@@ -49,3 +49,15 @@ export const DetailContainer = styled.div`
     margin-right: 0.7rem;
   }
 `
+
+export const Footer = styled.div`
+  background-color: #f7f7f7;
+  padding: 2.5rem 3rem;
+  border-top: 1px solid #f1f1f1;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin-top: auto;
+`
