@@ -2,19 +2,23 @@ import React from 'react';
 import styles from './styles'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import { Landing, Tours } from '../pages'
+import Pages from '../pages'
 
 function App() {
   return (
     <styles.App>
     <BrowserRouter>
       <Switch>
+        <Route path='/tours/:id'>
+          <Pages.Tour />
+        </Route>
+
         <Route path='/tours'>
-          <Tours />
+          <Pages.Tours />
         </Route>
         
         <Route path='/'>
-          <Landing />
+          <Pages.Landing />
         </Route>
       </Switch>
     </BrowserRouter>

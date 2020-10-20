@@ -1,2 +1,9 @@
-export { default as Landing } from './Landing'
-export { default as Tours } from './Tours'
+import Landing from './Landing'
+import Tour from './Tour'
+import Tours from './Tours'
+
+export default {
+  Landing,
+  Tour,
+  Tours
+}
