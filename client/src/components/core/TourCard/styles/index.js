@@ -1,18 +1,28 @@
 import {
-  TourCard,
+  Body,
+  DetailContainer,
   Header,
-  ImageContainer
+  ImageContainer,
+  TourCard
 } from './Base'
 
 import {
   CardImage,
-  ImageOverlay
+  ImageOverlay,
+  SubHeading,
+  TourDescription,
+  TourDetail
 } from './Content'
 
 export default {
+  Body,
   CardImage,
-  TourCard,
+  DetailContainer,
   Header,
   ImageContainer,
-  ImageOverlay
+  ImageOverlay,
+  SubHeading,
+  TourCard,
+  TourDescription,
+  TourDetail
 }

@@ -25,3 +25,27 @@ export const ImageContainer = styled.div`
   );
   height: 27rem;
 `
+
+export const Body = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.75rem;
+  grid-column-gap: 2rem;
+  padding: 2.5rem 3rem;
+`
+
+export const DetailContainer = styled.div`
+  font-size: 1.3rem;
+  display: flex;
+  box-align: center;
+  align-items: center;
+  grid-column-start: ${props => {
+    console.log(props)
+    return props.start
+  }};
+  grid-column-end: ${props => props.end};
+
+  i {
+    margin-right: 0.7rem;
+  }
+`

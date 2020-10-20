@@ -17,3 +17,27 @@ export const CardImage = styled.img`
   height: 100%;
   width: 100%;
 `
+
+export const SubHeading = styled.h4`
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  grid-column-start: 1;
+  grid-column-end: -1;
+`
+
+export const TourDescription = styled.p`
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: -1rem;
+  margin-bottom: 0.75rem;
+`
+
+export const TourDetail = styled.div`
+  font-size: 1.3rem;
+  display: flex;
+  box-align: center;
+  align-items: center;
+`
