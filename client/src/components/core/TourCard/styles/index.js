@@ -14,7 +14,8 @@ import {
   TourDescription,
   TourDetail,
   TourPrice,
-  TourRating
+  TourRating,
+  TourTitle
 } from './Content'
 
 export default {
@@ -30,5 +31,6 @@ export default {
   TourDescription,
   TourDetail,
   TourPrice,
-  TourRating
+  TourRating,
+  TourTitle
 }

@@ -37,11 +37,13 @@ const store = createStore(reducers, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={defaultTheme}>
-        <App />
-      </ThemeProvider>
-    </Provider>
+      <Provider store={store}>
+        <ThemeProvider theme={defaultTheme}>
+          <App />
+        </ThemeProvider>
+      </Provider>
+
+      
   </React.StrictMode>,
   document.getElementById('root')
 );

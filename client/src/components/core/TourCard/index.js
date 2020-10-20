@@ -24,6 +24,11 @@ const TourCard = (props) => {
               src={tourImage}
             />
           </styles.ImageContainer>
+          <styles.TourTitle>
+            <span>
+              {tourData.name}
+            </span>
+          </styles.TourTitle>
         </styles.Header>
 
         <styles.Body>
@@ -31,24 +36,15 @@ const TourCard = (props) => {
             {tourData.difficulty} {tourData.duration}-DAY TOUR
           </styles.SubHeading>
 
-          <styles.TourDescription
-            start={0}
-            end={1}
-          >
+          <styles.TourDescription>
             {shortenDescription(tourData.description)}
           </styles.TourDescription>
 
-          <styles.DetailContainer
-            // start={1}
-            // end={-1}
-          >
+          <styles.DetailContainer>
             <i className="fas fa-map-marker-alt"></i> San Francisco, US
           </styles.DetailContainer>
 
-          <styles.DetailContainer
-            // start={0}
-            // end={1}
-          >
+          <styles.DetailContainer>
             <i className="fas fa-calendar-alt"></i> {tourData.startDates[0]}
           </styles.DetailContainer>
 
