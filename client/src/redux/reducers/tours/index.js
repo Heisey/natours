@@ -1,11 +1,11 @@
+import { actions } from "../.."
 
 
 export default (state = null, action) => {
 
   switch(action.type) {
     case 'GET_ALL_TOURS':
-      console.log(action.payload)
-      return { ...state }
+      return { ...state, allTours: action.payload }
     default:
       return state
   }

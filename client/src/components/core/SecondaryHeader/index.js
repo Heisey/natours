@@ -1,20 +1,14 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 import styles from './styles'
-import {actions} from '../../../redux'
+
 
 import logo from '../../../assets/images/logo-white.png'
 
-const SecondaryHeader = (props) => {
+const SecondaryHeader = () => {
 
-  const {
-    getAllTours
-  } = props
-
-  useEffect(() => {
-    getAllTours()
-  })
-
+  
+  
+  
   return (
     <styles.SecondaryHeader>
       <styles.Logo 
@@ -28,6 +22,4 @@ const SecondaryHeader = (props) => {
   )
 }
 
-export default connect(null, {
-  getAllTours: actions.getAllTours
-})(SecondaryHeader)
+export default SecondaryHeader
