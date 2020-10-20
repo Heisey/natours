@@ -1,6 +1,3 @@
-import { actions } from "../.."
-
-
 export default (state = null, action) => {
 
   switch(action.type) {
