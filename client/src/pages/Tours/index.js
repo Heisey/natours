@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { Core } from '../../components'
+import { Core, Headers } from '../../components'
 import { actions } from '../../redux'
 import styles from './styles'
 
@@ -65,7 +65,7 @@ const Tours = (props) => {
 
   return (
     <styles.ToursPage>
-      <Core.SecondaryHeader />
+      <Headers.SecondaryHeader />
       <styles.ToursContainer>
         {renderTours()}
       </styles.ToursContainer>

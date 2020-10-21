@@ -1,9 +1,7 @@
-import PrimaryHeader from './PrimaryHeader'
-import SecondaryHeader from './SecondaryHeader'
+import JumboTron from './JumboTron'
 import TourCard from './TourCard'
 
 export default {
-  PrimaryHeader,
-  SecondaryHeader,
+  JumboTron,
   TourCard
 }

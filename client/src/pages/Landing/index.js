@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Core } from '../../components'
+import { Headers } from '../../components'
 
 const Landing = () => {
 
   return (
     <div>
-      <Core.PrimaryHeader />
+      <Headers.PrimaryHeader />
     </div>
   )
 }
