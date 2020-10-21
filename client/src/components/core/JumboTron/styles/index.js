@@ -1,12 +1,17 @@
 import {
-  JumboTron
+  JumboTron,
+  TextBox
 } from './Base'
 
 import {
-  Image
+  Image,
+  Overlay,
+  Heading
 } from './Content'
 
 export default {
   Image,
-  JumboTron
+  JumboTron,
+  Overlay,
+  TextBox
 }

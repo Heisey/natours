@@ -10,3 +10,11 @@ export const JumboTron = styled.div`
     0 100%
   );
 `
+
+export const TextBox = styled.div`
+  position: absolute;
+  bottom: 13vw;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+`

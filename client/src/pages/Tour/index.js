@@ -57,6 +57,7 @@ const Tour = (props) => {
     <div>
       <Headers.SecondaryHeader />
       <Core.JumboTron
+        name={tour ? tour.name : 'Puppies'}
         image={tourImageHandler(tour ? tour.imageCover : 'tour-1-cover.jpg')} 
       />
     </div>
