@@ -57,6 +57,8 @@ const Tour = (props) => {
     <div>
       <Headers.SecondaryHeader />
       <Core.JumboTron
+        location={'Sydney, Aus'} // !! Needs to be replaced with dyanmic value
+        days={tour ? tour.duration : 'puppies'}
         name={tour ? tour.name : 'Puppies'}
         image={tourImageHandler(tour ? tour.imageCover : 'tour-1-cover.jpg')} 
       />

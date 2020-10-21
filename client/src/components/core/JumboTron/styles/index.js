@@ -1,15 +1,22 @@
 import {
   JumboTron,
-  TextBox
+  TextBox,
+  DetailContainer,
+  DetailsContainer
 } from './Base'
 
 import {
+  Detail,
+  Heading,
   Image,
-  Overlay,
-  Heading
+  Overlay
 } from './Content'
 
 export default {
+  Detail,
+  DetailContainer,
+  DetailsContainer,
+  Heading,
   Image,
   JumboTron,
   Overlay,

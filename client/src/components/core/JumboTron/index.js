@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './styles'
-import { Heading } from './styles/Content'
 
 
 
 const JumboTron = (props) => {
-
   
   const {
+    days,
     image,
+    location,
     name
   } = props
   
@@ -19,11 +19,27 @@ const JumboTron = (props) => {
         src={image}
       />
       <styles.TextBox>
-        <Heading>
+        <styles.Heading>
           <span>
             {name} TOUR
           </span>
-        </Heading>
+        </styles.Heading>
+        <styles.DetailsContainer>
+          <styles.DetailContainer
+            marginRight
+          >
+            <i class="far fa-clock"></i> 
+            <styles.Detail>
+              {days} DAYS
+            </styles.Detail>
+          </styles.DetailContainer>
+
+          <styles.DetailContainer><i class="fas fa-map-marker-alt"></i>
+            <styles.Detail>
+              {location}
+            </styles.Detail>
+          </styles.DetailContainer>
+        </styles.DetailsContainer>
       </styles.TextBox>
     </styles.JumboTron>
   )

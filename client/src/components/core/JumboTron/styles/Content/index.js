@@ -37,3 +37,10 @@ export const Heading = styled.div`
     );
   }
 `
+
+export const Detail = styled.span`
+  margin-left: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+`
