@@ -1,7 +1,9 @@
 import {
-  getAllTours
+  getAllTours,
+  getTourById
 } from './tours'
 
 export default {
-  getAllTours
+  getAllTours,
+  getTourById
 }

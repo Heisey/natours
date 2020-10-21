@@ -27,8 +27,10 @@ exports.getTour = (req, res, next) => {
   
   const tour = data.tours.find(tour => tour.id === id)
 
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+
   res.status(200).json({
     status: 'success',
-    data: tour
+    results: tour
   })
 }

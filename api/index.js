@@ -55,6 +55,8 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/', tourRouter)
+app.use('/tours', tourRouter)
+
+
 
 module.exports = app;
