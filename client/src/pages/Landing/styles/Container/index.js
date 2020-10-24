@@ -29,7 +29,6 @@ export const FeaturesSection = styled.section`
   background-image: ${props => linearGradientGenerator(props, assets.images.tourSixCover)};
   background-size: cover;
   transform: skewY(-7deg);
-  //moving the section up to cover the white gap. 
   margin-top: -11rem;
 
   & > * {
@@ -40,5 +39,6 @@ export const FeaturesSection = styled.section`
 export const FeaturesSectionGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+  max-width: 114rem;
+  margin: 0 auto;
 `

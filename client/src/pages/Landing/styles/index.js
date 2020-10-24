@@ -11,8 +11,7 @@ import {
 
 import {
   Paragraph,
-  SecondaryHeading,
-  TertiaryHeading
+  SecondaryHeading
 } from './Content'
 
 export default {
@@ -25,6 +24,5 @@ export default {
   FeaturesSectionGrid,
   Landing,
   Paragraph,
-  SecondaryHeading,
-  TertiaryHeading
-};
+  SecondaryHeading
+}

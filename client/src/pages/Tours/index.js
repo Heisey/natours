@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { Core, Headers } from '../../components'
+import { Cards, Headers } from '../../components'
 import { actions } from '../../redux'
 import styles from './styles'
 import assets from '../../assets'
@@ -45,7 +45,7 @@ const Tours = (props) => {
 
     if (tours) {
       return tours.map(tour => (
-        <Core.TourCard
+        <Cards.TourCard
           key={tour.id}
           tourData={tour}
           tourImage={tourImageHandler(tour.imageCover)}

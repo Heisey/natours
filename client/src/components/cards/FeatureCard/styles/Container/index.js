@@ -1,0 +1,16 @@
+import styled from 'styled-components/macro'
+
+export const FeatureCard = styled.div`
+  background-color: rgba(255, 255, 255, .8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+  transition: transform .3s;
+  margin-right: ${props => props.last ? '0' : '6rem'};
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+`

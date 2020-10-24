@@ -17,13 +17,6 @@ export const SecondaryHeading = styled.h2`
   transition: all .2s;
 `
 
-export const TertiaryHeading = styled.h3`
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-`
-
 export const Paragraph = styled.p`
   font-size: 1.4rem;
 `

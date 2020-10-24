@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Headers, Image } from "../../components";
+import { Cards, Headers, Headings, Image } from "../../components";
 import styles from "./styles";
 
 const Landing = () => {
@@ -18,17 +18,17 @@ const Landing = () => {
 
         <styles.AboutSectionGrid>
           <styles.AboutSectionLeftSide>
-            <styles.TertiaryHeading>
+            <Headings.TertiaryHeading>
               You're going to fall in love with nature
-            </styles.TertiaryHeading>
+            </Headings.TertiaryHeading>
             <styles.Paragraph>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
               fugiat dolorem, odio impedit assumenda repudiandae possimus dolore
               tempora doloremque amet esse excepturi.
             </styles.Paragraph>
-            <styles.TertiaryHeading>
+            <Headings.TertiaryHeading>
               Live adventures like you never have before
-            </styles.TertiaryHeading>
+            </Headings.TertiaryHeading>
             <styles.Paragraph>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
               laboriosam soluta esse autem eligendi, possimus, nesciunt?
@@ -47,45 +47,39 @@ const Landing = () => {
 
       <styles.FeaturesSection>
         <styles.FeaturesSectionGrid>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon icon-basic-world"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
-              </p>
-            </div>
-          </div>
+          <Cards.FeatureCard 
+            heading='Explore the world'
+            icon='globe'
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+          </Cards.FeatureCard>
 
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon icon-basic-compass"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
-              </p>
-            </div>
-          </div>
+        
+          <Cards.FeatureCard
+            heading='Meet nature'
+            icon='compass'
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+          </Cards.FeatureCard>
+          
 
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon icon-basic-map"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
-              </p>
-            </div>
-          </div>
+          
+          <Cards.FeatureCard
+            heading='Find your way'
+            icon='map'
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+          </Cards.FeatureCard>
+          
 
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon icon-basic-heart"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-              <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
-              </p>
-            </div>
-          </div>
+
+          <Cards.FeatureCard
+            heading='Live a healthier life'
+            icon='heart'
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+          </Cards.FeatureCard>
+
         </styles.FeaturesSectionGrid>
       </styles.FeaturesSection>
 
