@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Headers } from "../../components";
+import { Headers, Image } from "../../components";
 import styles from "./styles";
 
 const Landing = () => {
@@ -15,7 +15,7 @@ const Landing = () => {
         </styles.AboutHeaderContainer>
 
         <styles.AboutSectionGrid>
-          <styles.AboutSectionLeftSide className="col-1-of-2">
+          <styles.AboutSectionLeftSide>
             <styles.TertiaryHeading>
               You're going to fall in love with nature
             </styles.TertiaryHeading>
@@ -37,8 +37,9 @@ const Landing = () => {
             </a>
           </styles.AboutSectionLeftSide>
 
-          <styles.AboutSectionRightSide className="col-1-of-2">
-            <div className="composition">
+          <styles.AboutSectionRightSide>
+            <Image.Composition />
+            {/* <div className="composition">
               <img
                 src="img/nat-1-large.jpg"
                 alt="bob"
@@ -54,7 +55,7 @@ const Landing = () => {
                 alt="karl"
                 className="composition__photo composition__photo--p3"
               />
-            </div>
+            </div> */}
           </styles.AboutSectionRightSide>
         </styles.AboutSectionGrid>
       </styles.AboutSection>

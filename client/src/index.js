@@ -29,7 +29,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from './core'
+import { defaultTheme } from './global'
 import { reducers } from './redux'
 // import {unregister} from './core'
 

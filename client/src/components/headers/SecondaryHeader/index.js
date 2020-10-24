@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from './styles'
 import { Link } from 'react-router-dom'
-
-import logo from '../../../assets/images/logo-white.png'
+import assets from '../../../assets'
 
 const SecondaryHeader = () => {
 
@@ -10,7 +9,7 @@ const SecondaryHeader = () => {
     <styles.SecondaryHeader>
       <Link to='/'>
         <styles.Logo 
-          src={logo}
+          src={assets.logos.logoWhite}
         />
       </Link>
       <styles.ButtonContainer>

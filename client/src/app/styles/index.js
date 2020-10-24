@@ -1,4 +1,4 @@
-import { App } from './Base'
+import { App } from './Container'
 
 export default {
   App
