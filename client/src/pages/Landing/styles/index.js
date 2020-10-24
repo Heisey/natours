@@ -3,8 +3,11 @@ import {
   AboutHeaderContainer,
   AboutSectionGrid,
   AboutSectionLeftSide,
-  AboutSectionRightSide
-} from "./Base";
+  AboutSectionRightSide,
+  FeaturesSection,
+  FeaturesSectionGrid,
+  Landing
+} from "./Container";
 
 import {
   Paragraph,
@@ -18,6 +21,9 @@ export default {
   AboutSectionGrid,
   AboutSectionLeftSide,
   AboutSectionRightSide,
+  FeaturesSection,
+  FeaturesSectionGrid,
+  Landing,
   Paragraph,
   SecondaryHeading,
   TertiaryHeading

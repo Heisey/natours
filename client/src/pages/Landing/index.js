@@ -5,8 +5,10 @@ import styles from "./styles";
 
 const Landing = () => {
   return (
-    <div>
+    <styles.Landing>
+
       <Headers.PrimaryHeader />
+
       <styles.AboutSection>
         <styles.AboutHeaderContainer>
           <styles.SecondaryHeading>
@@ -39,27 +41,55 @@ const Landing = () => {
 
           <styles.AboutSectionRightSide>
             <Image.Composition />
-            {/* <div className="composition">
-              <img
-                src="img/nat-1-large.jpg"
-                alt="bob"
-                className="composition__photo composition__photo--p1"
-              />
-              <img
-                src="img/nat-2-large.jpg"
-                alt="jeff"
-                className="composition__photo composition__photo--p2"
-              />
-              <img
-                src="img/nat-3-large.jpg"
-                alt="karl"
-                className="composition__photo composition__photo--p3"
-              />
-            </div> */}
           </styles.AboutSectionRightSide>
         </styles.AboutSectionGrid>
       </styles.AboutSection>
-    </div>
+
+      <styles.FeaturesSection>
+        <styles.FeaturesSectionGrid>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam id maiores hic rem.
+              </p>
+            </div>
+          </div>
+        </styles.FeaturesSectionGrid>
+      </styles.FeaturesSection>
+
+    </styles.Landing>
   );
 };
 

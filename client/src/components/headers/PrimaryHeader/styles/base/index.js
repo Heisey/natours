@@ -1,11 +1,12 @@
 import styled from 'styled-components/macro'
+import assets from '../../../../../assets'
 
-import { backgroundGradient } from '../functions'
+import {linearGradientGenerator} from '../../../../../utilities/helpers/linearGradientGenerator'
 
 export const PrimaryHeader = styled.div`
   position: relative;
   height: 95vh;
-  background-image: ${props => backgroundGradient(props)};
+  background-image: ${props => linearGradientGenerator(props, assets.images.tourSevenCover)};
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
