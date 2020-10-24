@@ -28,13 +28,13 @@ const JumboTron = (props) => {
           <styles.DetailContainer
             marginRight
           >
-            <i class="far fa-clock"></i> 
+            <i className="far fa-clock"></i> 
             <styles.Detail>
               {days} DAYS
             </styles.Detail>
           </styles.DetailContainer>
 
-          <styles.DetailContainer><i class="fas fa-map-marker-alt"></i>
+          <styles.DetailContainer><i className="fas fa-map-marker-alt"></i>
             <styles.Detail>
               {location}
             </styles.Detail>

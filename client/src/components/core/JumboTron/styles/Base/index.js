@@ -37,5 +37,5 @@ export const DetailContainer = styled.div`
   -webkit-box-align: center;
   align-items: center;
   text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
-  margin-right: ${props => props.marginRight ? '4rem' : 0}
+  margin-right: ${props => props.marginRight ? '4rem' : 0};
 `

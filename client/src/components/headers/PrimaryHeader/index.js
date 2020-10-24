@@ -15,11 +15,11 @@ const PrimaryHeader = () => {
       </styles.LogoBox>
       <styles.TextBox>
         <styles.Heading>
-          <styles.HeadingMain class="heading-primary--main">Outdoors</styles.HeadingMain>
-          <styles.HeadingSub class="heading-primary--sub">is where life happens</styles.HeadingSub>
+          <styles.HeadingMain>Outdoors</styles.HeadingMain>
+          <styles.HeadingSub>is where life happens</styles.HeadingSub>
         </styles.Heading>
         {/* //~~ Custom Link need to be built */}
-        {/* <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a> */}
+        <a href="/tours" class="btn btn--white btn--animated">Discover our tours</a>
       </styles.TextBox>
     </styles.PrimaryHeader>
   )

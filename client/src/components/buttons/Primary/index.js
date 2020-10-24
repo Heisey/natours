@@ -5,7 +5,7 @@ const Primary = (props) => {
     children
   } = props
   return (
-    <a href="#section-tours" class="btn btn--white btn--animated">{children}</a>
+    <a href="#section-tours" className="btn btn--white btn--animated">{children}</a>
   )
 }
 

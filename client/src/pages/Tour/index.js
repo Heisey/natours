@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { actions } from '../../redux'
 import { Core, Headers } from '../../components'
+import styles from './styles'
 
 import tour1Image from '../../assets/images/tour-1-cover.jpg'
 import tour2Image from '../../assets/images/tour-2-cover.jpg'
@@ -50,19 +51,33 @@ const Tour = (props) => {
         return tour8Image
       case 'tour-9-cover.jpg':
         return tour9Image
+      default:
+        return tour1Image
     }
   }
 
   return (
-    <div>
-      <Headers.SecondaryHeader />
-      <Core.JumboTron
-        location={'Sydney, Aus'} // !! Needs to be replaced with dyanmic value
-        days={tour ? tour.duration : 'puppies'}
-        name={tour ? tour.name : 'Puppies'}
-        image={tourImageHandler(tour ? tour.imageCover : 'tour-1-cover.jpg')} 
-      />
-    </div>
+    <styles.TourPage>
+      <styles.Header>
+        <Headers.SecondaryHeader />
+        <Core.JumboTron
+          location={'Sydney, Aus'} // !! Needs to be replaced with dyanmic value
+          days={tour ? tour.duration : 'puppies'}
+          name={tour ? tour.name : 'Puppies'}
+          image={tourImageHandler(tour ? tour.imageCover : 'tour-1-cover.jpg')} 
+        />
+      </styles.Header>
+
+      <styles.DetailsSection>
+        <styles.OverviewContainer>
+          <styles.Title>
+            quick facts
+          </styles.Title>
+        </styles.OverviewContainer>
+        <styles.DescriptionContainer>
+        </styles.DescriptionContainer>
+      </styles.DetailsSection>
+    </styles.TourPage>
   )
 }
 

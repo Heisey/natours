@@ -53,7 +53,7 @@ const TourCard = (props) => {
           </styles.DetailContainer>
 
           <styles.DetailContainer>
-            <i class="fas fa-user-alt"></i> 7 People
+            <i className="fas fa-user-alt"></i> 7 People
           </styles.DetailContainer>
         </styles.Body>
       

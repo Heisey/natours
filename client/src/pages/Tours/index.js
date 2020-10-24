@@ -41,6 +41,8 @@ const Tours = (props) => {
         return tour8Image
       case 'tour-9-cover.jpg':
         return tour9Image
+      default:
+        return tour1Image
     }
   }
 
