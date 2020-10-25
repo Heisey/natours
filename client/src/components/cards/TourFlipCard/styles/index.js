@@ -11,7 +11,6 @@ import {
 import {
   BottomText,
   CardPictureOne,
-  CardPictureTwo,
   List,
   ListItem,
   Title,
@@ -23,7 +22,6 @@ export default {
   BottomText,
   CallToActionContainer,
   CardPictureOne,
-  CardPictureTwo,
   DetailContainer,
   FrontSide,
   HeadingContainer,

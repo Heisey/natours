@@ -37,23 +37,8 @@ const CardPicture = styled.div`
 export const CardPictureOne = styled(CardPicture)`
   background-image: 
     url(${assets.images.tourFiveCover}), 
-    linear-gradient(
-      to right bottom, 
-      #ffb900, 
-      #ff7730
-    );
+    ${props => backgroundGenerator(props)};
 `
-
-export const CardPictureTwo = styled(CardPicture)`
-  background-image: 
-    url(${assets.images.tourFiveCover}), 
-    linear-gradient(
-      to right bottom, 
-      #55c57a, 
-      #28b485
-    );
-`
-
 
 export const Title = styled.span`
   padding: 1rem 1.5rem;

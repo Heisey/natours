@@ -5,7 +5,8 @@ const TourflipCard = props => {
 
   const {
     color,
-    tourData
+    tourData,
+    tourImage
   } = props
 
   console.log(tourData)
@@ -13,7 +14,10 @@ const TourflipCard = props => {
   return (
     <styles.TourFlipCard>
       <styles.FrontSide>
-        <styles.CardPictureOne />
+        <styles.CardPictureOne 
+          color={color}
+          image={tourImage}
+        />
         <styles.HeadingContainer>
           <styles.Title
             color={color}
