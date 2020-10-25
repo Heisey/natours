@@ -7,6 +7,7 @@ import {
   HeadingContainer,
   Landing,
   SectionGrid,
+  StoryCardContainer,
   StoriesSection,
   ToursSection
 } from "./Container";
@@ -25,6 +26,7 @@ export default {
   Landing,
   Paragraph,
   SectionGrid,
+  StoryCardContainer,
   StoriesSection,
   ToursSection
 }

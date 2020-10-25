@@ -151,11 +151,11 @@ const Landing = (props) => {
           </Headings.SecondaryHeading>
         </styles.HeadingContainer>
 
-        <div class="row">
+        <styles.StoryCardContainer>
           <Cards.StoryCard />
-        </div>
+        </styles.StoryCardContainer>
 
-        <div class="row">
+        <styles.StoryCardContainer>
           <div class="story">
             
             <figure class="story__shape">
@@ -169,10 +169,10 @@ const Landing = (props) => {
               </p>
             </div>
           </div>
-        </div>
+        </styles.StoryCardContainer>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn-text">Read all stories &rarr;</a>
+          <a href="/" class="btn btn-text">Read all stories &rarr;</a>
         </div>
       </styles.StoriesSection>
 

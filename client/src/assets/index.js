@@ -13,7 +13,10 @@ import tourNineCover from './images/tour-9-cover.jpg'
 // ~~ logo assets
 import logoWhite from './logos/logo-white.png'
 
-// ~~ image assets
+// ~~ people assets
+import personOne from './people/personOne.jpg'
+import personTwo from './people/personTwo.jpg'
+
 const images = {
   hero,
   tourOneCover,
@@ -31,7 +34,13 @@ const logos = {
   logoWhite
 }
 
+const people = {
+  personOne,
+  personTwo
+}
+
 export default {
   logos,
-  images
+  images,
+  people
 }

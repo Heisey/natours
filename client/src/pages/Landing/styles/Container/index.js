@@ -51,5 +51,10 @@ export const ButtonContainer = styled.div`
 `
 
 export const StoriesSection = styled.section`
-  
+  position: relative;
+  padding: 15rem 0;
+`
+
+export const StoryCardContainer = styled.div`
+  margin-bottom: 8rem;
 `
