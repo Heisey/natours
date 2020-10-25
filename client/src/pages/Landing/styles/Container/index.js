@@ -39,15 +39,17 @@ export const FeaturesSection = styled.section`
   }
 `
 
-export const FeaturesSectionGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 114rem;
-  margin: 0 auto;
-`
-
 export const ToursSection = styled.section`
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+`
+
+export const ButtonContainer = styled.div`
+  text-align: center;
+  margin-top: 10rem;
+`
+
+export const StoriesSection = styled.section`
+  
 `

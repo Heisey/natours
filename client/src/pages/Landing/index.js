@@ -132,10 +132,49 @@ const Landing = (props) => {
           }
         </styles.SectionGrid>
 
-        {/* <div class="u-center-text u-margin-top-huge">
+        <styles.ButtonContainer class="u-center-text u-margin-top-huge">
           <a href="#section-tours" class="btn btn--green">Discover all tours</a>
-        </div> */}
+        </styles.ButtonContainer>
       </styles.ToursSection>
+
+      <styles.StoriesSection class="section-stories">
+        <div class="bg-video">
+          
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+          </video>
+        </div>
+        <styles.HeadingContainer>
+          <Headings.SecondaryHeading>
+            We make people genuinely happy
+          </Headings.SecondaryHeading>
+        </styles.HeadingContainer>
+
+        <div class="row">
+          <Cards.StoryCard />
+        </div>
+
+        <div class="row">
+          <div class="story">
+            
+            <figure class="story__shape">
+              <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img" />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut placeat asperiores, fugiat molestias veritatis explicabo sequi porro corporis dicta quos excepturi reiciendis impedit facilis similique! Ducimus ex quia voluptates. Suscipit!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn-text">Read all stories &rarr;</a>
+        </div>
+      </styles.StoriesSection>
 
     </styles.Landing>
   );

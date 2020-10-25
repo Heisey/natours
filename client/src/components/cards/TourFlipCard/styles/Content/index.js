@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import assets from '../../../../../assets'
 
 const backgroundGenerator = props => {
 
@@ -36,8 +35,7 @@ const CardPicture = styled.div`
 
 export const CardPictureOne = styled(CardPicture)`
   background-image: 
-    url(${assets.images.tourFiveCover}), 
-    ${props => backgroundGenerator(props)};
+  ${props => `${backgroundGenerator(props)}, url(${props.image})`}
 `
 
 export const Title = styled.span`

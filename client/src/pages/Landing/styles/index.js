@@ -1,30 +1,30 @@
 import { 
   AboutSection,
-  HeadingContainer,
-  SectionGrid,
   AboutSectionLeftSide,
   AboutSectionRightSide,
+  ButtonContainer,
   FeaturesSection,
-  FeaturesSectionGrid,
+  HeadingContainer,
   Landing,
+  SectionGrid,
+  StoriesSection,
   ToursSection
 } from "./Container";
 
 import {
-  Paragraph,
-  SecondaryHeading
+  Paragraph
 } from './Content'
 
 export default {
   HeadingContainer,
   AboutSection,
-  SectionGrid,
+  ButtonContainer,
   AboutSectionLeftSide,
   AboutSectionRightSide,
   FeaturesSection,
-  FeaturesSectionGrid,
   Landing,
   Paragraph,
-  SecondaryHeading,
+  SectionGrid,
+  StoriesSection,
   ToursSection
 }
