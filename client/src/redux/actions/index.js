@@ -1,9 +1,11 @@
 import {
   getAllTours,
-  getTourById
+  getTourById,
+  getTopThreeTours
 } from './tours'
 
 export default {
   getAllTours,
-  getTourById
+  getTourById,
+  getTopThreeTours
 }

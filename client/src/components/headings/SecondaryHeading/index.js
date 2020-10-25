@@ -1,11 +1,16 @@
 import React from 'react'
+import styles from './styles'
 
-const SecondaryHeading = () => {
+const SecondaryHeading = (props) => {
+
+  const {
+    children
+  } = props
 
   return (
-    <div>
-      Puppy Secondary Heading
-    </div>
+    <styles.SecondaryHeader>
+      {children}
+    </styles.SecondaryHeader>
   )
 }
 

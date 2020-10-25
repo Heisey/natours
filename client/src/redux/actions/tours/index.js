@@ -24,3 +24,17 @@ export const getTourById = (id) => {
     })
   }
 }
+
+export const getTopThreeTours = () => {
+
+  return async dispatch => {
+    const response = await axios.get('http://localhost:3001/tours')
+    const tours = response.data.results
+    const topTours =[tours[0], tours[1], tours[2]]
+
+    dispatch({
+      type: 'GET_TOP_THREE_TOURS',
+      payload: topTours
+    })
+  }
+}

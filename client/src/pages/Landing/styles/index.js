@@ -1,12 +1,13 @@
 import { 
   AboutSection,
-  AboutHeaderContainer,
-  AboutSectionGrid,
+  HeadingContainer,
+  SectionGrid,
   AboutSectionLeftSide,
   AboutSectionRightSide,
   FeaturesSection,
   FeaturesSectionGrid,
-  Landing
+  Landing,
+  ToursSection
 } from "./Container";
 
 import {
@@ -15,14 +16,15 @@ import {
 } from './Content'
 
 export default {
-  AboutHeaderContainer,
+  HeadingContainer,
   AboutSection,
-  AboutSectionGrid,
+  SectionGrid,
   AboutSectionLeftSide,
   AboutSectionRightSide,
   FeaturesSection,
   FeaturesSectionGrid,
   Landing,
   Paragraph,
-  SecondaryHeading
+  SecondaryHeading,
+  ToursSection
 }
