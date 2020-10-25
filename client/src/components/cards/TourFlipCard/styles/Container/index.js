@@ -2,19 +2,19 @@ import styled from 'styled-components/macro'
 
 const backgroundGenerator = props => {
 
-  if (props.orange) {
+  if (props.color === 'orange') {
     return `linear-gradient(
       to right bottom,
       #ffb900,
       #ff7730
     )`
-  } else if (props.green) {
+  } else if (props.color === 'green') {
     return `linear-gradient(
       to right bottom,
       #55c57a,
       #28b485
     )`
-  } else if (props.blue) {
+  } else if (props.color === 'blue') {
     return `linear-gradient(
       to right bottom,
       #2998ff,
@@ -78,5 +78,20 @@ export const HeadingContainer = styled.h4`
 
 export const DetailContainer = styled.div`
   padding: 3rem;
+`
+
+export const CallToActionContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+`
+
+export const PriceBox = styled.div`
+  text-align: center;
+  margin-bottom: 8rem;
+  color: $color-white;
 `
 

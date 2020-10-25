@@ -3,41 +3,48 @@ import styles from './styles'
 
 const TourflipCard = props => {
 
+  const {
+    color,
+    tourData
+  } = props
+
+  console.log(tourData)
+
   return (
     <styles.TourFlipCard>
       <styles.FrontSide>
         <styles.CardPictureOne />
         <styles.HeadingContainer>
           <styles.Title
-            orange
+            color={color}
           >
-            The Sea Explorer
+            {tourData.name}
           </styles.Title>
         </styles.HeadingContainer>
         <styles.DetailContainer>
           <styles.List>
-            <styles.ListItem>3 day tour</styles.ListItem>
-            <styles.ListItem>Up to 30 people</styles.ListItem>
+            <styles.ListItem>{tourData.duration} day tour</styles.ListItem>
+            <styles.ListItem>Up to {tourData.maxGroupSize} people</styles.ListItem>
             <styles.ListItem>2 tour guides</styles.ListItem>
             <styles.ListItem>Sleep in cozy hostels</styles.ListItem>
             <styles.ListItem
               last
             >
-              Difficulty: easy
+              Difficulty: {tourData.difficulty}
             </styles.ListItem>
           </styles.List>
         </styles.DetailContainer>
       </styles.FrontSide>
       <styles.BackSide
-        orange
+        color={color}
       >
-        <div class="card__cta">
-          <div class="card__price-box">
-            <p class="card__price-only">Only</p>
-            <p class="card__price-value">$297</p>
-          </div>
-          <a href="#popup" class="btn btn--white">Book now!</a>
-        </div>
+        <styles.CallToActionContainer>
+          <styles.PriceBox>
+            <styles.TopText>Only</styles.TopText>
+            <styles.BottomText>${tourData.price}</styles.BottomText>
+          </styles.PriceBox>
+          <a href="#popup" className="btn btn--white">Book now!</a>
+        </styles.CallToActionContainer>
       </styles.BackSide>
     </styles.TourFlipCard>
   )

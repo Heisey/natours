@@ -18,7 +18,7 @@ const PrimaryHeader = () => {
           <styles.HeadingSub>is where life happens</styles.HeadingSub>
         </styles.Heading>
         {/* //~~ Custom Link need to be built */}
-        <a href="/tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="/tours" className="btn btn--white btn--animated">Discover our tours</a>
       </styles.TextBox>
     </styles.PrimaryHeader>
   )

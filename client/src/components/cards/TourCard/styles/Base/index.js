@@ -40,7 +40,6 @@ export const DetailContainer = styled.div`
   box-align: center;
   align-items: center;
   grid-column-start: ${props => {
-    console.log(props)
     return props.start
   }};
   grid-column-end: ${props => props.end};

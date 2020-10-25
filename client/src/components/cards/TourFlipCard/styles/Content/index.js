@@ -3,19 +3,19 @@ import assets from '../../../../../assets'
 
 const backgroundGenerator = props => {
 
-  if (props.orange) {
+  if (props.color === 'orange') {
     return `linear-gradient(
       to right bottom,
       #ffb900,
       #ff7730
     )`
-  } else if (props.green) {
+  } else if (props.color === 'green') {
     return `linear-gradient(
       to right bottom,
       #55c57a,
       #28b485
     )`
-  } else if (props.blue) {
+  } else if (props.color === 'blue') {
     return `linear-gradient(
       to right bottom,
       #2998ff,
@@ -44,6 +44,17 @@ export const CardPictureOne = styled(CardPicture)`
     );
 `
 
+export const CardPictureTwo = styled(CardPicture)`
+  background-image: 
+    url(${assets.images.tourFiveCover}), 
+    linear-gradient(
+      to right bottom, 
+      #55c57a, 
+      #28b485
+    );
+`
+
+
 export const Title = styled.span`
   padding: 1rem 1.5rem;
   -webkit-box-decoration-break: clone;
@@ -61,6 +72,15 @@ export const ListItem = styled.li`
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
-  border-bottom: ${props => props.last ? '1px solid #eee' : 'none'}
+  border-bottom: ${props => props.last ? '1px solid #eee' : 'none'};
 `
 
+export const TopText = styled.p`
+  font-size: 1.4rem;
+  text-transform: uppercase;
+`
+
+export const BottomText = styled.p`
+  font-size: 6rem;
+  font-weight: 100;
+`

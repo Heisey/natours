@@ -17,7 +17,6 @@ const Landing = (props) => {
     getTours()
   }, [getTours])
 
-  console.log(topTours ? topTours[0] : 'puppies')
 
   return (
     <styles.Landing>
@@ -115,16 +114,19 @@ const Landing = (props) => {
               <Cards.TourFlipCard 
                 tourData={topTours[0]}
                 tourImage={assets.images.tourOneCover}
+                color='orange'
               />
 
-              <Cards.TourCard 
+              <Cards.TourFlipCard 
                 tourData={topTours[1]}
                 tourImage={assets.images.tourOneCover}
+                color='green'
               />
 
-              <Cards.TourCard 
+              <Cards.TourFlipCard 
                 tourData={topTours[2]}
                 tourImage={assets.images.tourSevenCover}
+                color='blue'
               />
             </>
           }
