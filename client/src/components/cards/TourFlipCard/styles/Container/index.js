@@ -23,12 +23,6 @@ const backgroundGenerator = props => {
   }
 }
 
-export const TourFlipCard = styled.div`
-  position: relative;
-  perspective: 150rem;
-  height: 52rem;
-`
-
 const CardSide = styled.div`
   font-size: 2rem;
   height: 52rem;
@@ -41,14 +35,33 @@ const CardSide = styled.div`
   left: 0;
   width: 100%;
   backface-visibility: hidden;
+  transform: rotateY(0deg);
 `
 
 export const FrontSide = styled(CardSide)`
   background-color: #fff;
+
 `
 
 export const BackSide = styled(CardSide)`
+  transform: rotateY(180deg);
   background-image: ${backgroundGenerator};
+`
+
+export const TourFlipCard = styled.div`
+  position: relative;
+  perspective: 150rem;
+  height: 52rem;
+
+  &:hover {
+    ${FrontSide} {
+      transform: rotateY(180deg);
+    }
+
+    ${BackSide} {
+      transform: rotateY(0deg)
+    }
+  }
 `
 
 export const HeadingContainer = styled.h4`
@@ -66,3 +79,4 @@ export const HeadingContainer = styled.h4`
 export const DetailContainer = styled.div`
   padding: 3rem;
 `
+

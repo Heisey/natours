@@ -28,7 +28,7 @@ const TourflipCard = props => {
           </styles.List>
         </styles.DetailContainer>
       </styles.FrontSide>
-      {/* <styles.BackSide
+      <styles.BackSide
         orange
       >
         <div class="card__cta">
@@ -38,7 +38,7 @@ const TourflipCard = props => {
           </div>
           <a href="#popup" class="btn btn--white">Book now!</a>
         </div>
-      </styles.BackSide> */}
+      </styles.BackSide>
     </styles.TourFlipCard>
   )
 }

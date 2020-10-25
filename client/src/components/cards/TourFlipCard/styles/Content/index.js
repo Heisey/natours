@@ -63,3 +63,4 @@ export const ListItem = styled.li`
   padding: 1rem;
   border-bottom: ${props => props.last ? '1px solid #eee' : 'none'}
 `
+
