@@ -17,6 +17,9 @@ import logoWhite from './logos/logo-white.png'
 import personOne from './people/personOne.jpg'
 import personTwo from './people/personTwo.jpg'
 
+import backgroundVideoMP4 from './videos/backgroundVideo.mp4'
+import backgroundVideoWEBM from './videos/backgroundVideo.webm'
+
 const images = {
   hero,
   tourOneCover,
@@ -39,8 +42,14 @@ const people = {
   personTwo
 }
 
+const videos = {
+  backgroundVideoMP4,
+  backgroundVideoWEBM
+}
+
 export default {
   logos,
   images,
-  people
+  people,
+  videos
 }

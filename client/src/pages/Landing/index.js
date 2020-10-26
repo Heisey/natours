@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux'
 import { actions } from '../../redux'
 
-import { Cards, Headers, Headings, Image } from "../../components";
+import { Cards, Forms, Headers, Headings, Image } from "../../components";
 import styles from "./styles";
 import assets from '../../assets'
 
@@ -137,14 +137,17 @@ const Landing = (props) => {
         </styles.ButtonContainer>
       </styles.ToursSection>
 
-      <styles.StoriesSection class="section-stories">
-        <div class="bg-video">
-          
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4" />
-            <source src="img/video.webm" type="video/webm" />
-          </video>
-        </div>
+      <styles.StoriesSection>
+        <styles.BackgroundVideoContainer>
+          <styles.BackgroundVideo 
+            autoplay 
+            muted 
+            loop
+          >
+            <source src={assets.videos.backgroundVideoMP4} type="video/mp4" />
+            <source src={assets.videos.backgroundVideoWEBM} type="video/webm" />
+          </styles.BackgroundVideo>
+        </styles.BackgroundVideoContainer>
         <styles.HeadingContainer>
           <Headings.SecondaryHeading>
             We make people genuinely happy
@@ -169,10 +172,22 @@ const Landing = (props) => {
           />
         </styles.StoryCardContainer>
 
-        <div class="u-center-text u-margin-top-huge">
+        <styles.ButtonContainer>
           <a href="/" class="btn btn-text">Read all stories &rarr;</a>
-        </div>
+        </styles.ButtonContainer>
       </styles.StoriesSection>
+
+      <styles.SignupSection>
+        <div className="row">
+          <div className="book">
+            <div className="book__form">
+              <Forms.LandingSignupForm 
+              
+              />
+            </div>
+          </div>
+        </div>
+      </styles.SignupSection>
 
     </styles.Landing>
   );
