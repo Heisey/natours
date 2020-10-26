@@ -1,6 +1,7 @@
 import {
   CircleShape,
-  StoryCard
+  StoryCard,
+  TextContainer
 } from './Container'
 
 import {
@@ -12,5 +13,6 @@ export default {
   Caption,
   CircleShape,
   Image,
-  StoryCard
+  StoryCard,
+  TextContainer
 }

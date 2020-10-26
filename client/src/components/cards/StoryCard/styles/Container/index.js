@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro'
+import { Caption, Image } from '../Content'
 
 export const StoryCard = styled.div`
   width: 75%;
@@ -14,6 +15,18 @@ export const StoryCard = styled.div`
   & > * {
     transform: skewX(12deg)
   }
+
+  &:hover {
+    ${Caption} {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    ${Image} {
+      transform: translateX(-4rem) scale(1);
+      filter: blur(3px) brightness(80%);
+    }
+  }
 `
 
 export const CircleShape = styled.figure`
@@ -26,4 +39,8 @@ export const CircleShape = styled.figure`
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+`
+
+export const TextContainer = styled.div`
+  transform: skewX(12deg);
 `

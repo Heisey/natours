@@ -152,23 +152,21 @@ const Landing = (props) => {
         </styles.HeadingContainer>
 
         <styles.StoryCardContainer>
-          <Cards.StoryCard />
+          <Cards.StoryCard 
+            image={assets.people.personOne}
+            name='Mary Smith'
+            highlight='I had the best week ever with my family'
+            quote='Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium accusantium accusamus a deserunt dolor sit dicta minima unde neque ipsum at dolorem magni excepturi, labore molestias fugiat quidem eum!'
+          />
         </styles.StoryCardContainer>
 
         <styles.StoryCardContainer>
-          <div class="story">
-            
-            <figure class="story__shape">
-              <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img" />
-              <figcaption class="story__caption">Jack Wilson</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut placeat asperiores, fugiat molestias veritatis explicabo sequi porro corporis dicta quos excepturi reiciendis impedit facilis similique! Ducimus ex quia voluptates. Suscipit!
-              </p>
-            </div>
-          </div>
+          <Cards.StoryCard 
+            image={assets.people.personTwo}
+            name='Jack Wilson'
+            highlight='WOW! My life is completely different now'
+            quote='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut placeat asperiores, fugiat molestias veritatis explicabo sequi porro corporis dicta quos excepturi reiciendis impedit facilis similique! Ducimus ex quia voluptates. Suscipit!'
+          />
         </styles.StoryCardContainer>
 
         <div class="u-center-text u-margin-top-huge">
