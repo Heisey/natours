@@ -11,6 +11,7 @@ import tourEightCover from './images/tour-8-cover.jpg'
 import tourNineCover from './images/tour-9-cover.jpg'
 
 // ~~ logo assets
+import logoGreenTwoTimes from './logos/logo-green-2x.png'
 import logoWhite from './logos/logo-white.png'
 
 // ~~ people assets
@@ -34,6 +35,7 @@ const images = {
 }
 
 const logos = {
+  logoGreenTwoTimes,
   logoWhite
 }
 

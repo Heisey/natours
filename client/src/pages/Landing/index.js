@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux'
 import { actions } from '../../redux'
 
-import { Cards, Forms, Headers, Headings, Image } from "../../components";
+import { Cards, Footers, Forms, Headers, Headings, Image } from "../../components";
 import styles from "./styles";
 import assets from '../../assets'
 
@@ -188,6 +188,8 @@ const Landing = (props) => {
           </div>
         </div>
       </styles.SignupSection>
+
+      <Footers.PrimaryFooter />
 
     </styles.Landing>
   );
