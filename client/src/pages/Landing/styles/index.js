@@ -8,6 +8,8 @@ import {
   HeadingContainer,
   Landing,
   SectionGrid,
+  SignupContentContainer,
+  SignupFormContainer,
   SignupSection,
   StoryCardContainer,
   StoriesSection,
@@ -31,8 +33,10 @@ export default {
   Landing,
   Paragraph,
   SectionGrid,
+  SignupContentContainer,
   SignupSection,
   StoryCardContainer,
+  SignupFormContainer,
   StoriesSection,
   ToursSection
 }

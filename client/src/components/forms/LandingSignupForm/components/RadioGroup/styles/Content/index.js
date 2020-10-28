@@ -31,7 +31,6 @@ export const Button = styled.span`
     position: absolute;
     top: 0.15rem;
     left: 0.15rem;
-    /* transform: translateY(-0.15rem, -0.15rem); */
     background-color: #55c57a;
     opacity: ${props => props.checked ? '1' : '0'};
     transition: opacity .2s;

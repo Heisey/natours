@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './styles'
-// import FormComponents from '../'
 
 const RadioGroup = props => {
 
@@ -21,7 +20,6 @@ const RadioGroup = props => {
         name={inputName} 
         value={inputValue}
         onChange={handleChange}
-        // onChange={formik.handleChange}
       />
       <styles.Label htmlFor="small">
         {text}
@@ -29,7 +27,6 @@ const RadioGroup = props => {
           checked={checked}
         />
       </styles.Label>
-      {/* <FormComponents.Label /> */}
     </styles.RadioGroup>
   )
 }

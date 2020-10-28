@@ -178,15 +178,13 @@ const Landing = (props) => {
       </styles.StoriesSection>
 
       <styles.SignupSection>
-        <div className="row">
-          <div className="book">
-            <div className="book__form">
-              <Forms.LandingSignupForm 
-              
-              />
-            </div>
-          </div>
-        </div>
+        <styles.SignupContentContainer
+          backgroundImage={assets.images.tourThreeCover}
+        >
+          <styles.SignupFormContainer className="book__form">
+            <Forms.LandingSignupForm />
+          </styles.SignupFormContainer>
+        </styles.SignupContentContainer>
       </styles.SignupSection>
 
       <Footers.PrimaryFooter />

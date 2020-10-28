@@ -70,4 +70,28 @@ export const BackgroundVideoContainer = styled.div`
   overflow: hidden;
 `
 
-export const SignupSection = styled.section``
+export const SignupSection = styled.section`
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 15rem 0;
+`
+
+export const SignupContentContainer = styled.div`
+  background-image: linear-gradient(
+      105deg, 
+      rgba(255, 255, 255, .9) 0%,
+      rgba(255, 255, 255, .9) 50%,
+      transparent 50%
+    ), 
+    url(${props => props.backgroundImage});
+  background-size: 100%; 
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+
+  height: 50rem;
+`
+
+export const SignupFormContainer = styled.div`
+  width: 50%;
+  padding: 6rem;
+`

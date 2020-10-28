@@ -83,22 +83,6 @@ const LandingSignupForm = () => {
           handleChange={formik.handleChange}
           text='LargeGroupTour'
         />
-
-        {/* <div className="form__radio-group">
-          <input 
-            type="radio" 
-            className="form__radio-input" 
-            id="large" 
-            name="groupSize"
-            value='large'
-            onChange={formik.handleChange}
-          />
-          <label htmlFor="large" className="form__radio-label">
-            Large tour group
-            <span className="form__radio-button"></span>
-          </label>
-
-        </div> */}
       </FormComponents.Group>
 
       <FormComponents.Group className="form__group">
