@@ -9,24 +9,24 @@ const PrimaryFooter = () => {
       <styles.LogoContainer>
         <styles.Logo src={assets.logos.logoGreenTwoTimes} alt="Full logo" />
       </styles.LogoContainer>
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item"><a href="/" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="/" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="/" class="footer__link">Careers</a></li>
-              <li class="footer__item"><a href="/" class="footer__link">Privacy policy</a></li>
-              <li class="footer__item"><a href="/" class="footer__link">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-of-2">
+      <styles.ContentContainer>
+        <styles.NavContainer>
+          <styles.Navigation>
+            <styles.ListContainer>
+              <styles.ListItem><a href="/" class="footer__link">Company</a></styles.ListItem>
+              <styles.ListItem><a href="/" class="footer__link">Contact us</a></styles.ListItem>
+              <styles.ListItem><a href="/" class="footer__link">Careers</a></styles.ListItem>
+              <styles.ListItem><a href="/" class="footer__link">Privacy policy</a></styles.ListItem>
+              <styles.ListItem last><a href="/" >Terms</a></styles.ListItem>
+            </styles.ListContainer>
+          </styles.Navigation>
+        </styles.NavContainer>
+        <styles.CopyrightContainer>
           <p class="footer__copyright">
             Designed by <a href="/" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="/" class="footer__link">Advanced CSS and Sass</a>.
           </p>
-        </div>
-      </div>
+        </styles.CopyrightContainer>
+      </styles.ContentContainer>
     </styles.PrimaryFooter>
   )
 }
