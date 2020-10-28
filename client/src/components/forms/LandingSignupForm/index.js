@@ -22,7 +22,7 @@ const LandingSignupForm = () => {
   })
 
   return (
-    <form action="#" className="form"
+    <styles.Form action="#" className="form"
       onSubmit={formik.handleSubmit}
     >
       <styles.HeadingContainer>
@@ -31,8 +31,9 @@ const LandingSignupForm = () => {
         </Headings.SecondaryHeading>
       </styles.HeadingContainer>
 
-      <div className="form__group">
+      <FormComponents.Group>
         <FormComponents.Input 
+          inputId='name'
           inputType="text" 
           inputPlaceholder="Full name" 
           inputRequired
@@ -40,14 +41,14 @@ const LandingSignupForm = () => {
           inputValue={formik.values.name}
           handleChange={formik.handleChange}
         />
-        <FormComponents.Label 
+        {/* <FormComponents.Label 
           labelFor="name"
         >
-          Full name
-        </FormComponents.Label>
-      </div>
+          FULL NAME
+        </FormComponents.Label> */}
+      </FormComponents.Group>
 
-      <div className="form__group">
+      <FormComponents.Group>
         <FormComponents.Input 
           inputType="email" 
           inputPlaceholder="Email address"  
@@ -56,30 +57,34 @@ const LandingSignupForm = () => {
           inputValue={formik.values.email}
           handleChange={formik.handleChange}
         />
-        <FormComponents.Label 
+        {/* <FormComponents.Label 
           labelFor="email"
         >
           Email address
-        </FormComponents.Label>
-      </div>
+        </FormComponents.Label> */}
+      </FormComponents.Group>
 
-      <div className="form__group u-margin-bottom-medium">
-        <div className="form__radio-group">
-          <input 
-            type="radio" 
-            className="form__radio-input" 
-            id="small" 
-            name="groupSize" 
-            value='small'
-            onChange={formik.handleChange}
-          />
-          <label htmlFor="small" className="form__radio-label">
-            Small tour group
-            <span className="form__radio-button"></span>
-          </label>
-        </div>
+      <FormComponents.Group
+        last
+      >
+        <FormComponents.RadioGroup 
+          inputId='small'
+          inputName='groupSize'
+          value='small'
+          handleChange={formik.handleChange}
+          text='Small Group Tour'
+          checked
+        />
 
-        <div className="form__radio-group">
+        <FormComponents.RadioGroup 
+          inputId='large'
+          inputName='groupSize'
+          value='large'
+          handleChange={formik.handleChange}
+          text='LargeGroupTour'
+        />
+
+        {/* <div className="form__radio-group">
           <input 
             type="radio" 
             className="form__radio-input" 
@@ -93,13 +98,13 @@ const LandingSignupForm = () => {
             <span className="form__radio-button"></span>
           </label>
 
-        </div>
-      </div>
+        </div> */}
+      </FormComponents.Group>
 
-      <div className="form__group">
+      <FormComponents.Group className="form__group">
         <button className="btn btn--green">Next step &rarr;</button>
-      </div>
-    </form>
+      </FormComponents.Group>
+    </styles.Form>
   )
 }
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro'
 
 export const Input = styled.input`
-  
   font-size: 1.5rem;
   font-family: inherit;
   color: inherit;

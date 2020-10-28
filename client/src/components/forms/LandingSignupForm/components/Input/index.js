@@ -4,6 +4,7 @@ import styles from './styles'
 const Input = props => {
 
   const {
+    inputId,
     inputName,
     handleChange,
     inputPlaceholder,
@@ -14,6 +15,7 @@ const Input = props => {
 
   return (
     <styles.Input 
+      id={inputId}
       type={inputType} 
       placeholder={inputPlaceholder ? inputPlaceholder : null} 
       required={inputRequired ? true : false}
