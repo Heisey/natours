@@ -14,4 +14,5 @@ export const Navigation = styled.nav`
 export const ListItem = styled.li`
   display: inline-block;
   margin-right: ${props => props.last ? '1.5rem' : '0'};
+  color: white;
 `

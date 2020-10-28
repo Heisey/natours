@@ -9,8 +9,6 @@ const TourflipCard = props => {
     tourImage
   } = props
 
-  console.log(tourData)
-
   return (
     <styles.TourFlipCard>
       <styles.FrontSide>

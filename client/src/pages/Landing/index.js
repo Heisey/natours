@@ -132,8 +132,8 @@ const Landing = (props) => {
           }
         </styles.SectionGrid>
 
-        <styles.ButtonContainer class="u-center-text u-margin-top-huge">
-          <a href="#section-tours" class="btn btn--green">Discover all tours</a>
+        <styles.ButtonContainer className="u-center-text u-margin-top-huge">
+          <a href="#section-tours" className="btn btn--green">Discover all tours</a>
         </styles.ButtonContainer>
       </styles.ToursSection>
 
@@ -173,7 +173,7 @@ const Landing = (props) => {
         </styles.StoryCardContainer>
 
         <styles.ButtonContainer>
-          <a href="/" class="btn btn-text">Read all stories &rarr;</a>
+          <a href="/" className="btn btn-text">Read all stories &rarr;</a>
         </styles.ButtonContainer>
       </styles.StoriesSection>
 
