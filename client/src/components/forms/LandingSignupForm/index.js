@@ -2,6 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik'
 
 import { Headings } from '../../'
+import FormComponents from './components'
 import styles from './styles'
 
 
@@ -31,30 +32,35 @@ const LandingSignupForm = () => {
       </styles.HeadingContainer>
 
       <div className="form__group">
-        <input 
-          type="text" 
-          className="form__input" 
-          placeholder="Full name" 
-          id="name" 
-          required
-          name='name'
-          value={formik.values.name}
-          onChange={formik.handleChange}
+        <FormComponents.Input 
+          inputType="text" 
+          inputPlaceholder="Full name" 
+          inputRequired
+          inputName='name'
+          inputValue={formik.values.name}
+          handleChange={formik.handleChange}
         />
-        <label htmlFor="name" className="form__label">Full name</label>
+        <FormComponents.Label 
+          labelFor="name"
+        >
+          Full name
+        </FormComponents.Label>
       </div>
 
       <div className="form__group">
-        <input 
-          type="email" 
-          className="form__input" 
-          placeholder="Email address" 
-          id="email" 
-          required 
-          value={formik.values.email}
-          onChange={formik.handleChange}
+        <FormComponents.Input 
+          inputType="email" 
+          inputPlaceholder="Email address"  
+          inputRequired 
+          inputName='email'
+          inputValue={formik.values.email}
+          handleChange={formik.handleChange}
         />
-        <label htmlFor="email" className="form__label">Email address</label>
+        <FormComponents.Label 
+          labelFor="email"
+        >
+          Email address
+        </FormComponents.Label>
       </div>
 
       <div className="form__group u-margin-bottom-medium">
