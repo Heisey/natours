@@ -17,7 +17,20 @@ export const OverviewContainer = styled.div`
   justify-content: center;
   padding: 0 8vw;
   padding-top: 14vw;
+  flex-direction: column;
   /* flex: 0 0 50%; */
+`
+
+export const OverviewFactContainer = styled.div`
+  margin-bottom: 2.25rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
 `
 
 export const DescriptionContainer = styled.div`

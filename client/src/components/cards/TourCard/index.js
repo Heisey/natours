@@ -1,5 +1,6 @@
 import React from 'react' 
 import styles from './styles'
+import { Buttons } from '../../'
 
 const TourCard = (props) => {
 
@@ -64,6 +65,12 @@ const TourCard = (props) => {
           <styles.TourRating>
             <span>{tourData.ratingsAverage}</span> rating {`(${tourData.ratingsQuantity})`}
           </styles.TourRating>
+          <Buttons.Primary 
+            color='green'
+            to={`/tours/${tourData.id}`}
+          >
+            Details
+          </Buttons.Primary>
         </styles.Footer>
       </styles.TourCard>
     </div>

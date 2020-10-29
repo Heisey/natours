@@ -1,7 +1,7 @@
 import {
   ToursContainer,
   ToursPage
-} from './Base'
+} from './Container'
 
 export default {
   ToursContainer,

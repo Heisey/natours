@@ -3,18 +3,26 @@ import {
   DetailsSection,
   Header,
   OverviewContainer,
+  OverviewFactContainer,
   TourPage
-} from './Base'
+} from './Container'
 
 import {
+  FactData,
+  FactIcon,
+  FactLabel,
   Title
 } from './Content'
 
 export default {
   DescriptionContainer,
   DetailsSection,
+  FactData,
+  FactIcon,
+  FactLabel,
   Header,
   OverviewContainer,
+  OverviewFactContainer,
   Title,
   TourPage
 }

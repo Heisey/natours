@@ -12,6 +12,7 @@ const colorConfig = props => {
 }
 
 export const Primary = styled(Link)`
+  text-align: center;
   background-color: ${colorConfig};
   color: #333;
 

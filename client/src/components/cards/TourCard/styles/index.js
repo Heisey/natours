@@ -5,7 +5,7 @@ import {
   Header,
   ImageContainer,
   TourCard
-} from './Base'
+} from './Container'
 
 import {
   CardImage,

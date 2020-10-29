@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 import {
   moveInLeft,
   moveInRight
-} from '../animations'
+} from '../Animations'
 
 export const HeaderLogo = styled.img`
   height: 3.5rem;

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { actions } from '../../redux'
-import { Core, Headers } from '../../components'
+import { Abstracts, Headers } from '../../components'
 import styles from './styles'
 
 import tour1Image from '../../assets/images/tour-1-cover.jpg'
@@ -56,11 +56,13 @@ const Tour = (props) => {
     }
   }
 
+  console.log(tour)
+
   return (
     <styles.TourPage>
       <styles.Header>
         <Headers.SecondaryHeader />
-        <Core.JumboTron
+        <Abstracts.JumboTron
           location={'Sydney, Aus'} // !! Needs to be replaced with dyanmic value
           days={tour ? tour.duration : 'puppies'}
           name={tour ? tour.name : 'Puppies'}
@@ -73,8 +75,53 @@ const Tour = (props) => {
           <styles.Title>
             quick facts
           </styles.Title>
+
+          <styles.OverviewFactContainer>
+            <styles.FactIcon className="far fa-calendar-alt"></styles.FactIcon>
+            <styles.FactLabel>
+              Next Date
+            </styles.FactLabel>
+            <styles.FactData>
+              {tour ? tour.startDates[0] : 'unknow'}
+            </styles.FactData>
+          </styles.OverviewFactContainer>
+
+          <styles.OverviewFactContainer>
+            <styles.FactIcon className="fas fa-exclamation-triangle"></styles.FactIcon>
+            <styles.FactLabel>
+              Difficulty
+            </styles.FactLabel>
+            <styles.FactData>
+              {tour ? tour.difficulty : 'unknow'}
+            </styles.FactData>
+          </styles.OverviewFactContainer>
+
+          <styles.OverviewFactContainer>
+            <styles.FactIcon className="fas fa-user-alt"></styles.FactIcon>
+            <styles.FactLabel>
+              Participants
+            </styles.FactLabel>
+            <styles.FactData>
+              {tour ? tour.maxGroupSize : 'unknow'} People
+            </styles.FactData>
+          </styles.OverviewFactContainer>
+
+          <styles.OverviewFactContainer>
+            <styles.FactIcon className="fas fa-star"></styles.FactIcon>
+            <styles.FactLabel>
+              Rating
+            </styles.FactLabel>
+            <styles.FactData>
+              {tour ? tour.ratingsAverage : 'unknow'} / 5
+            </styles.FactData>
+          </styles.OverviewFactContainer>
+          
+          <styles.Title>
+            your tour guides
+          </styles.Title>
         </styles.OverviewContainer>
         <styles.DescriptionContainer>
+
         </styles.DescriptionContainer>
       </styles.DetailsSection>
     </styles.TourPage>

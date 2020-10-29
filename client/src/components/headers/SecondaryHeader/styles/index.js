@@ -1,7 +1,7 @@
 import {
   ButtonContainer,
   SecondaryHeader
-} from './base'
+} from './Container'
 
 import {
   Logo

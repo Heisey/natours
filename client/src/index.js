@@ -33,7 +33,7 @@ import App from './app';
 import { defaultTheme } from './global'
 import { reducers } from './redux'
 import './index.css';
-// import {unregister} from './core'
+// import {unregister} from './global'
 
 const store = createStore(reducers, applyMiddleware(thunk))
 
@@ -44,9 +44,6 @@ ReactDOM.render(
           <App />
         </ThemeProvider>
       </Provider>
-
-      
   </React.StrictMode>,
   document.getElementById('root')
 );
-

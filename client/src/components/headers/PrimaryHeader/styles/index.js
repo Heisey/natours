@@ -2,14 +2,14 @@ import {
   PrimaryHeader, 
   LogoBox,
   TextBox
-} from './base'
+} from './Container'
 
 import {
   HeaderLogo,
   Heading,
   HeadingMain,
   HeadingSub
-} from './content'
+} from './Content'
 
 export default {
   PrimaryHeader,

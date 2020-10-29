@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { Cards, Headers } from '../../components'
+import { Cards, Footers, Headers } from '../../components'
 import { actions } from '../../redux'
 import styles from './styles'
 import assets from '../../assets'
@@ -62,6 +62,7 @@ const Tours = (props) => {
       <styles.ToursContainer>
         {renderTours()}
       </styles.ToursContainer>
+      <Footers.PrimaryFooter />
     </styles.ToursPage>
   )
 }

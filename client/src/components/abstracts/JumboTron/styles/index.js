@@ -3,7 +3,7 @@ import {
   TextBox,
   DetailContainer,
   DetailsContainer
-} from './Base'
+} from './Container'
 
 import {
   Detail,
