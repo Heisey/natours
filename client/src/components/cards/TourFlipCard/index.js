@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import { Buttons } from '../../'
 
 const TourflipCard = props => {
 
@@ -45,7 +46,12 @@ const TourflipCard = props => {
             <styles.TopText>Only</styles.TopText>
             <styles.BottomText>${tourData.price}</styles.BottomText>
           </styles.PriceBox>
-          <a href="#popup" className="btn btn--white">Book now!</a>
+          <Buttons.Primary 
+            to='/tours'
+            color='white'
+          >
+            Book now!
+          </Buttons.Primary>
         </styles.CallToActionContainer>
       </styles.BackSide>
     </styles.TourFlipCard>

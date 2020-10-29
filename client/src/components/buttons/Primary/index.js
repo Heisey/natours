@@ -1,12 +1,20 @@
 import React from 'react'
+import styles from './styles'
 
 const Primary = (props) => {
   const {
-    children
+    children,
+    color,
+    to
   } = props
   return (
-    <a href="#section-tours" className="btn btn--white btn--animated">{children}</a>
+    <styles.Primary 
+      color={color}
+      to={to} 
+    >
+      {children}
+    </styles.Primary>
   )
 }
 
-export const Primary
+export default Primary

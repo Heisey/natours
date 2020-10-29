@@ -9,7 +9,7 @@ export const Input = styled.input`
   background-color: rgba(255, 255, 255, .5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 70%;
   display: block;
   transition: all .3s;
 

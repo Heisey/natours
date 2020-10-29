@@ -4,6 +4,7 @@ import { useFormik } from 'formik'
 import { Headings } from '../../'
 import FormComponents from './components'
 import styles from './styles'
+import { Buttons } from '../../'
 
 
 const LandingSignupForm = () => {
@@ -65,7 +66,7 @@ const LandingSignupForm = () => {
       </FormComponents.Group>
 
       <FormComponents.Group
-        last
+        // last
       >
         <FormComponents.RadioGroup 
           inputId='small'
@@ -81,12 +82,17 @@ const LandingSignupForm = () => {
           inputName='groupSize'
           value='large'
           handleChange={formik.handleChange}
-          text='LargeGroupTour'
+          text='Large Group Tour'
         />
       </FormComponents.Group>
 
       <FormComponents.Group className="form__group">
-        <button className="btn btn--green">Next step &rarr;</button>
+        <Buttons.Primary
+          to='/tours'
+          color='green'
+        >
+          Next step &rarr;
+        </Buttons.Primary>
       </FormComponents.Group>
     </styles.Form>
   )

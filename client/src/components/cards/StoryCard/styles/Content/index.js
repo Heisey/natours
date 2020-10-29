@@ -5,6 +5,7 @@ export const Image = styled.img`
   transform: translateX(-4rem) scale(1.4);
   backface-visibility: hidden;
   transition: all .5s;
+  
 `
 
 export const Caption = styled.figcaption`

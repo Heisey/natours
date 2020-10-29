@@ -9,7 +9,7 @@ export const Label = styled.label`
   cursor: pointer;
   position: relative;
   padding: 1rem;
-  padding-left: 1.6rem;
+  padding-left: 3rem;
 `
 
 export const Button = styled.span`
@@ -19,7 +19,7 @@ export const Button = styled.span`
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: -2rem;
+  left: 0;
   top: 1.1rem;
 
   &::after {

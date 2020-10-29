@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux'
 import { actions } from '../../redux'
 
-import { Cards, Footers, Forms, Headers, Headings, Image } from "../../components";
+import { Buttons, Cards, Footers, Forms, Headers, Headings, Image } from "../../components";
 import styles from "./styles";
 import assets from '../../assets'
 
@@ -51,9 +51,12 @@ const Landing = (props) => {
               laboriosam soluta esse autem eligendi, possimus, nesciunt?
             </styles.Paragraph>
 
-            <a href="#section" className="btn-text">
+            <Buttons.Primary
+              to='/tours'
+              color='green'
+            >
               Learn more &rarr;
-            </a>
+            </Buttons.Primary>
           </styles.AboutSectionLeftSide>
 
           <styles.AboutSectionRightSide>
@@ -133,7 +136,12 @@ const Landing = (props) => {
         </styles.SectionGrid>
 
         <styles.ButtonContainer className="u-center-text u-margin-top-huge">
-          <a href="#section-tours" className="btn btn--green">Discover all tours</a>
+          <Buttons.Primary
+            to='/'
+            color='green'
+          >
+            Discover all tours
+          </Buttons.Primary>
         </styles.ButtonContainer>
       </styles.ToursSection>
 

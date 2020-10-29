@@ -1,4 +1,5 @@
 import {
+  ContentContainer,
   CircleShape,
   StoryCard,
   TextContainer
@@ -11,6 +12,7 @@ import {
 
 export default {
   Caption,
+  ContentContainer,
   CircleShape,
   Image,
   StoryCard,

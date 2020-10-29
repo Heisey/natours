@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles'
 import { Link } from 'react-router-dom'
 import assets from '../../../assets'
+import { Buttons } from '../../'
 
 const PrimaryHeader = () => {
 
@@ -17,8 +18,12 @@ const PrimaryHeader = () => {
           <styles.HeadingMain>Outdoors</styles.HeadingMain>
           <styles.HeadingSub>is where life happens</styles.HeadingSub>
         </styles.Heading>
-        {/* //~~ Custom Link need to be built */}
-        <a href="/tours" className="btn btn--white btn--animated">Discover our tours</a>
+        <Buttons.Primary
+          to='/'
+          color='white'
+        >
+          Discover our tours
+        </Buttons.Primary>
       </styles.TextBox>
     </styles.PrimaryHeader>
   )

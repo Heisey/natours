@@ -13,6 +13,7 @@ const StoryCard = (props) => {
 
   return (
     <styles.StoryCard>
+      <styles.ContentContainer>
         <styles.CircleShape>
           <styles.Image 
             src={image} 
@@ -28,6 +29,7 @@ const StoryCard = (props) => {
             {quote}
           </p>
         </styles.TextContainer>
+      </styles.ContentContainer>
     </styles.StoryCard>
   )
 }
